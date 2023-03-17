@@ -13,7 +13,7 @@ int main()
 		}
 		printf("\n");
 	}
-	
+	printf("수정되었습니다");
 	
 	
 	
