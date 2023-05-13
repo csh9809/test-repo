@@ -1,5 +1,5 @@
 #include <stdio.h>
-//line2 수정 본계정
+
 int main()
 {
 	int n = 5;
@@ -14,11 +14,7 @@ int main()
 		printf("\n");
 	}
 	
-	// 수정한 사람 최승환
-	printf("수정");
-	//2번을 위한 수정
-	
-	//문제 2번을 위한 본계정의 수정
+
 
 	
 	
