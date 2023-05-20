@@ -1,25 +1,26 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/ì„í–‰ë§¨ê²Œì„
 
 int main()
 {
-	string answer = "system";             //answerÀº Á¤´äÀÇ ¿ªÇÒ //std::string
-	int length = answer.length();         //±æÀÌÀÇ ¿ªÇÒ
-	int tries = 0;                        //³²Àº È½¼ö,½ÃµµÈ½¼ö
-	string view(length, '-');             //ÇöÀç»óÅÂ  string view(°³¼ö,¹®ÀÚ)
+	string answer = "system";             //answerì€ ì •ë‹µì˜ ì—­í•  //std::string
+	int length = answer.length();         //ê¸¸ì´ì˜ ì—­í• 
+	int tries = 0;                        //ë‚¨ì€ íšŸìˆ˜,ì‹œë„íšŸìˆ˜
+	string view(length, '-');             //í˜„ì¬ìƒíƒœ  string view(ê°œìˆ˜,ë¬¸ì)
 	char ch;
 	int pos;
 	while (1)
 	{
 		system("cls");
-		cout << "ÇöÀç »óÅÂ:" << view << "\t" << "³²Àº È½¼ö:" << 10 - tries << endl;
-		cout << "ÃßÃø ¹®ÀÚ ÀÔ·Â:";
+		cout << "í˜„ì¬ ìƒíƒœ:" << view << "\t" << "ë‚¨ì€ íšŸìˆ˜:" << 10 - tries << endl;
+		cout << "ì¶”ì¸¡ ë¬¸ì ì…ë ¥:";
 		cin >> ch;
 
 		if (view.find(ch) != string::npos)
 		{
-			cout << "ÇØ´ç ¹®ÀÚ´Â ÀÌ¹Ì ÀÖ½À´Ï´Ù." << endl;
+			cout << "í•´ë‹¹ ë¬¸ìëŠ” ì´ë¯¸ ìˆìŠµë‹ˆë‹¤." << endl;
 			system("pause");
 			continue;
 			
@@ -34,10 +35,10 @@ int main()
 
 			if (tries >= 10)
 			{
-				cout << "Æ²·È½À´Ï´Ù. Á¤´äÀº" << answer << "ÀÔ´Ï´Ù" << endl;
+				cout << "í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€" << answer << "ì…ë‹ˆë‹¤" << endl;
 				break;
 			}
-			cout << "ÇØ´ç ¹®ÀÚ°¡ ¾ø½À´Ï´Ù." << endl;
+			cout << "í•´ë‹¹ ë¬¸ìê°€ ì—†ìŠµë‹ˆë‹¤." << endl;
 
 		}
 		else
@@ -52,10 +53,10 @@ int main()
 
 			if (answer == view)
 			{
-				cout << "Á¤´äÀ» ¸ÂÃè½À´Ï´Ù." << endl;
+				cout << "ì •ë‹µì„ ë§ì·„ìŠµë‹ˆë‹¤." << endl;
 				break;
 			}
-			cout << "¹®ÀÚ¸¦ Ã£¾Ò½À´Ï´Ù." << endl;
+			cout << "ë¬¸ìë¥¼ ì°¾ì•˜ìŠµë‹ˆë‹¤." << endl;
 		}
 		system("pause");
 	}
